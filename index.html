@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Codificador</title>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h3 class="titulo-nome">Código Secreto</h3>
+        </div>
+    </header>
+    <main>
+        <section id="section">
+            <div class="card">
+                <form action>
+                    <label for="entrada-texto" class="texto-label"> Apenas letras minúscula e sem acento</label>
+                    <textarea name="texto" class="caixa-texto" placeholder="Insira o texto aqui" ></textarea>                                                    
+                    <button class="btn" id="btn-cripto" type="submit">criptografar <img src="./img/lock_black_24dp.svg" class="img-cad" style="color: darkgoldenrod;"></button>
+                    <button class="btn" type="submit" id="btn-descripto">descriptografar <img src="./img/lock_open_black_24dp.svg "class="img-cad"></button>
+
+                </form>
+
+            </div>
+            <div class="card">
+                <label for="entrada-texto" class="texto-label" id="texto-label"> Mensagem Criptografada:</label>
+                <div class="caixa-texto" id="msg"> </div> 
+                <button class="btn" type="submit" id="btn-copiar">copiar<img src="./img/copy_all_black_24dp.svg" class="img-cad"></button>              
+                
+            </div>            
+        </section>
+        <div class="card-aviso" id="aviso" >
+            <div class="fechar-modal"><img src="./img/highlight_off_black_24dp.svg" alt="" id="fechar">
+                <hr>
+            </div>
+           
+            <div class="info-card-aviso">
+                
+                <span>As "chaves" de criptografia que utilizaremos são:</span>
+                <br>                
+                <span>A letra <strong >"a"</strong> é convertida para <strong style="color: blue;">"ai"</strong></span>
+                <span>&nbsp&nbsp A letra <strong >"e"</strong> é convertida para <strong style="color: blue;">"enter"</strong></span> 
+                <span>A letra <strong >"i"</strong> é convertida para <strong style="color: blue;">"imes"</strong></span> 
+                <span>A letra <strong >"o"</strong> é convertida para <strong style="color: blue;">"ober"</strong></span> 
+                <span>A letra <strong >"u"</strong> é convertida para <strong style="color: blue;">"ufat"</strong></span>               
+                            
+            </div>       
+           
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="./javascrpit/desCripto.js"></script>
+    <script src="./javascrpit/acoes.js"></script>
+    <script src="./javascrpit/criptografar.js"></script>
+    
+</body>
+</html>
